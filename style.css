@@ -22,6 +22,7 @@
     --cor3: #6e8bdb;
     --cor4: #ffffff;
     --cor5: #143828; 
+    --cor6: #000000;
 }
 
 html {
@@ -357,7 +358,6 @@ h1 {
     top: 0px;
     left: 0px;
     gap: 2rem;
-    color: var(--cor6);
     display: none;
     flex-direction: column;
     align-items: center;
@@ -365,14 +365,14 @@ h1 {
 }
 
 .icons-expanded {
-    fill: #000;
+    fill: white;
     transition: .2s;
     text-shadow: 2px 2px #00000066;
 }
 
 .icons-expanded:hover {
     cursor: pointer;
-    fill: var(--cor2);
+    fill: var(--cor3);
 }
 
 .fechar-expanded {
@@ -381,12 +381,21 @@ h1 {
 }
 
 .texto-expanded {
-    max-width: 50%;
-    background-color: var(--cor7);
-    padding: 3%;
+    max-width: 40%;
+    background-color: var(--cor4);
+    padding: 2rem;
     border-radius: 2rem;
     line-height: 1.4;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.texto-expanded > p {
+    color: var(--cor6);
 }
 
 .midia-expanded-bg {
