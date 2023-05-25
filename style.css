@@ -152,7 +152,7 @@ h1 {
 }
 
 .sobre_bg {
-    background-color: var(--cor2);
+    background-color: var(--cor4);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,7 +162,7 @@ h1 {
 
 .img_sobre {
     width: 1000px;
-    aspect-ratio: 16/8;
+    aspect-ratio: 2;
 }
 
 .helv {
@@ -180,12 +180,13 @@ h1 {
     flex-direction: column;
     gap: 3rem;
     margin-bottom: 3rem;
+    
 }
 
-.texto_sobre > p {
+.texto_sobre > p, h2 {
     font-size: 1.2rem;
     line-height: 2rem;
-
+    color: var(--cor1);
 }
 
 .phone-call {
@@ -269,6 +270,47 @@ h1 {
     }
 }
 
+.servicos_bg {
+    background-color: var(--cor3);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem 10rem;
+    padding: 2rem;
+    max-width: 100vw;
+}
+
+.servicos_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px red;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.img_servicos_card {
+    width: 115px;
+    max-width: 100%;
+}
+
+.servicos_card > h3 {
+    text-align: center;
+}
+
+.servicos_btn {
+    border: none;
+    background-color: #495867;
+    transition: 0.2s ease-in-out;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 7px;
+}
+
+.servicos_btn:hover {
+    cursor: pointer;
+    background-color: #303f4e;
+}
 
 /* footer */
 
