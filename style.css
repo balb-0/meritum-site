@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: source_sans;
+    src: url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap);
+}
+
+@font-face {
+    font-family: codelight;
+    src: url(fonts/CODE\ Light.otf);
+}
+
+*, *::after, *::before {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor4);
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    
+    
+}
+
+:root {
+    --cor1: #0c121e;
+    --cor2: #1c2642;
+    --cor3: #6e8bdb;
+    --cor4: #ffffff;
+    --cor5: #143828; 
+}
+
+html {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+/* header */
+
+.head {
+    box-shadow: 0px 2px 6px 0px #00000066;
+    position: sticky;
+    top: 0px;
+}
+
+.navega {
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo_principal {
+    aspect-ratio: 1;
+    width: 110px;
+    max-width: 100%;
+}
+
+.lista {
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+}
+
+.item {
+    font-size: 1rem;
+}
+  
+.item > a {
+    position: relative;
+    display: inline-block;
+}
+  
+.item > a::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+  
+.item > a:hover::before {
+    width: 100%;
+}
+
+.flex_icons {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.icons {
+    fill: var(--cor4);
+    transition: 0.2s ease-in-out;
+}
+
+.icons:hover {
+    cursor: pointer;
+    fill: var(--cor3);
+
+}
