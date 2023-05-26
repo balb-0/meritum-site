@@ -35,8 +35,16 @@
         overflow: hidden;
     }
 
+    h1 {
+        max-width: 80vw;
+    }
+
     .img_sobre {
         max-width: 100vw;
+    }
+
+    .texto_sobre {
+        max-width: 80vw;
     }
 
     .servicos_bg {
@@ -44,7 +52,7 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 2.5rem;
     }
-    
+
     .img_servicos_card {
         max-width: 30vw;
     }
