@@ -400,6 +400,7 @@ h1 {
 
 .texto-expanded > p {
     color: var(--cor6);
+    max-width: 50%;
 }
 
 .midia-expanded-bg {
