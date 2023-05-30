@@ -94,3 +94,8 @@ function scroll(event) {
         behavior: "smooth"
     });
 }
+
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.querySelector('.my-div').style.backgroundColor = 'white'; 
+}
