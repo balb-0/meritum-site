@@ -456,6 +456,8 @@ h1 {
     margin: 3rem auto;
 }
 
-
-
-
+@media (prefers-color-scheme: dark) {
+    .sobre_bg {
+      background-color: orange;
+    }
+}
