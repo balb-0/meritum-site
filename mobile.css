@@ -85,6 +85,7 @@
         position: fixed;
         inset: 0 0 0 30%;
         flex-direction: column;
+        align-items: flex-start;
         padding: min(30vh, 10rem) 2rem;
         gap: 3rem;
         background-color: var(--cor3);
@@ -99,7 +100,7 @@
     .item {
         font-size: 1.5rem;
         text-transform: uppercase;
-
+        font-weight: bold;
     }
     
     .cta {
@@ -127,8 +128,8 @@
         border: 0px;
         aspect-ratio: 1;
         width: 3rem;
-        top: 2rem;
-        right: 2rem;
+        top: 1.5rem;
+        right: 1.5rem;
         z-index: 9999;
         cursor: pointer;
         background-size: 70%;   
@@ -138,7 +139,7 @@
 
     @supports (backdrop-filter: blur()) {
         .lista {
-            background-color: hsl(0, 0%, 100%, 0.3);
+            background-color: hsla(0, 0%, 15%, 0.294);
             backdrop-filter: blur(0.8rem);
             }
         }

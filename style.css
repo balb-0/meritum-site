@@ -62,8 +62,9 @@ html.block-scroll {
 
 .logo_principal {
     aspect-ratio: 1;
-    width: 110px;
+    width: 65px;
     max-width: 100%;
+    margin: 30%;
 }
 
 .lista {
