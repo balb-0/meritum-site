@@ -154,5 +154,11 @@
         width: 80%;
         max-width: 80%;
     }
+
+    @media (prefers-color-scheme: dark) {
+        .sobre_bg {
+          background-color: white;
+        }
+    }
     
 }
