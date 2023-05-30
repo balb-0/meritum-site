@@ -76,7 +76,7 @@ html.block-scroll {
 }
 
 .item {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
   
 .item > a {
@@ -111,7 +111,7 @@ html.block-scroll {
 
 .icons:hover {
     cursor: pointer;
-    fill: var(--cor3);
+    fill: #495867;
 }
 
 /* main */
