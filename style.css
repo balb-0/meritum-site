@@ -13,16 +13,18 @@
     color: var(--cor4);
     text-decoration: none;
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;    
+    font-family: Helvetica, sans-serif;
 }
 
 :root {
     --cor1: #0c121e;
     --cor2: #1c2642;
-    --cor3: #6e8bdb;
+    --cor3: #131e3e;
     --cor4: #ffffff;
     --cor5: #143828; 
     --cor6: #000000;
+    --cor7: #6e8bdb; 
+
 }
 
 html {
@@ -47,6 +49,14 @@ html.block-scroll {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.toggle {
+    display: none;
+}
+
+.hide {
+    display: none;
 }
 
 
@@ -122,7 +132,7 @@ html.block-scroll {
 }
 
 .meritum {
-    color: var(--cor3);
+    color: var(--cor7);
     font-family: 'source_sans';
 }
 
@@ -195,6 +205,7 @@ h1 {
     font-size: 1.2rem;
     line-height: 2rem;
     color: var(--cor1);
+    text-align: justify;
 }
 
 .phone-call {
@@ -212,6 +223,8 @@ h1 {
     display: inline-block;
     line-height: 65px;
 }
+
+
 
 .phone-call:before {
     position: absolute;
@@ -319,6 +332,7 @@ h1 {
     background-color: #303f4e;
 }
 
+
 /* footer */
 
 .footer {
@@ -396,6 +410,7 @@ h1 {
     align-items: center;
     gap: 2rem;
     box-shadow: 0px 2px 6px 0px #00000066;
+    width: 30%;
 }
 
 .texto-expanded > p {
@@ -426,4 +441,7 @@ h1 {
     background-size: cover;
     margin: 3rem auto;
 }
+
+
+
 

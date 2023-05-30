@@ -20,10 +20,11 @@
     :root {
         --cor1: #0c121e;
         --cor2: #1c2642;
-        --cor3: #6e8bdb;
+        --cor3: #131e3e;
         --cor4: #ffffff;
         --cor5: #143828; 
         --cor6: #000000;
+        --cor7: #6e8bdb 
     }
     
     html {
@@ -35,8 +36,17 @@
         overflow: hidden;
     }
 
+
     h1 {
         max-width: 80vw;
+    }
+
+    .toggle {
+        display: block;
+    }
+    
+    .hide {
+        display: none;
     }
 
     .img_sobre {
@@ -51,6 +61,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 2.5rem;
+        background-color: var(--cor3);
     }
 
     .img_servicos_card {
@@ -64,4 +75,54 @@
     .texto-expanded > p {
         max-width: 80%;
     }
+
+    .lista {
+        z-index: 9000;
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2rem;
+        gap: 1.5rem;
+        background-color: var(--cor3);
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;   
+    }
+
+    .lista[data-visible='true'] {
+        transform: translateX(0%);
+    }
+
+    .item {
+        font-size: 2rem;
+        text-align: left;
+    }
+    
+    .cta {
+        max-width: 10rem;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+        position: absolute;
+        background: url(images/menu_open.svg);
+        background-repeat: no-repeat;
+        border: 0px;
+        aspect-ratio: 1;
+        width: 3rem;
+        top: 2.5rem;
+        right: 2rem;
+        z-index: 9999;
+        cursor: pointer;
+    }
+
+    @supports (backdrop-filter: blur()) {
+        .lista {
+            background-color: hsl(0, 0%, 100%, 0.3);
+            backdrop-filter: blur(0.8rem);
+            }
+        }
 }

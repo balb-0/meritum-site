@@ -14,12 +14,13 @@
 </head>
 <body>
     <header class="head">
+        <button aria-controls="controle" class="toggle" aria-expanded="false"><span class="hide">Menu</span></button>
         <nav class="navega">
             <a href="https://www.meritummkt.com" target="_blank"><img src="images/logo_tratada.png" alt="logo_principal" class="logo_principal"></a>
-            <ul class="lista">
-                <li class="item"><a href="#home">Home</a></li>
-                <li class="item"><a href="#sobre">Sobre</a></li>
-                <li class="item"><a href="#servicos">Serviços</a></li>
+            <ul class="lista" data-visible="false" id="controle">
+                <li class="item home_close" data-page="home" id="homebtn"><a href="#home">Home</a></li>
+                <li class="item sobre_close" id="sobrebtn"><a href="#sobre">Sobre</a></li>
+                <li class="item servicos_close" id="servicosbtn"><a href="#servicos">Serviços</a></li>
             </ul>
             <section class="flex_icons">
                 <a href="https://www.instagram.com/meritum.mkt/" target="_blank">
@@ -59,7 +60,7 @@
                     <p>ESSA ABORDAGEM BUSCA AUXILIAR OS ADVOGADOS A SE DESTACAREM NO MERCADO COMPETITIVO POR MEIO DO MARKETING 
                         DIGITAL, QUE ENVOLVE O USO ESTRATÉGICO DE CONTEÚDO RELEVANTE, OTIMIZAÇÃO DE MECANISMOS DE PESQUISA (SEO),
                         PRESENÇA NAS REDES SOCIAIS, PUBLICIDADE ONLINE E OUTRAS ESTRATÉGIAS DE PROMOÇÃO. COM A EXPERTISE 
-                        COMBINADA DAS DIVERSAS ÁREAS DE CONHECIMENTO PRESENTES NA EQUIPE DA MERITUM, FORNECEMOS UMA VISÃO 
+                        COMBINADA DAS DIVERSAS ÁREAS DE CONHECIMENTO PRESENTES NA EQUIPE DA <span class="meritum helv">MERITUM</span>, FORNECEMOS UMA VISÃO 
                         ABRANGENTE E ORIENTAÇÃO ESPECIALIZADA PARA AUXILIAR OS ADVOGADOS A OBTEREM SUCESSO NO AMBIENTE DIGITAL.</p>
                 </section>
             </section>
@@ -84,7 +85,7 @@
             </section>
         </section>
 <!-- section abaixo é o botão do wpp -->
-        <section >
+        <section class="wpp_btn">
             <div class="teste" id="animation">
                  <div class="phone-call">
                      <a href="https://wa.link/b3da7t" target="_blank">
