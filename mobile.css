@@ -97,7 +97,9 @@
     }
 
     .item {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+
     }
     
     .cta {
@@ -108,6 +110,15 @@
         display: none;
     }
 
+    .icons_footer_parent {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .icons_footer {
+        display: block;
+    }
+
     .toggle {
         display: block;
         position: absolute;
@@ -116,11 +127,14 @@
         border: 0px;
         aspect-ratio: 1;
         width: 3rem;
-        top: 2.5rem;
+        top: 2rem;
         right: 2rem;
         z-index: 9999;
         cursor: pointer;
+        background-size: 70%;   
+        background-position: center center;     
     }
+
 
     @supports (backdrop-filter: blur()) {
         .lista {
@@ -128,4 +142,15 @@
             backdrop-filter: blur(0.8rem);
             }
         }
+
+    .texto_footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+
+    
 }
