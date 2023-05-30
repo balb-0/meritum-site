@@ -458,6 +458,6 @@ h1 {
 
 @media (prefers-color-scheme: dark) {
     .sobre_bg {
-      background-color: orange;
+      background-color: white;
     }
 }
