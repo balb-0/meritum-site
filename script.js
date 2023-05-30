@@ -90,7 +90,7 @@ function scroll(event) {
     
     window.scrollTo({
         left: 0,
-        top: to - 114,
+        top: to - 107,
         behavior: "smooth"
     });
 }
