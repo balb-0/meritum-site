@@ -39,7 +39,9 @@
 
     h1 {
         max-width: 80vw;
+        font-size: 1.7rem;
     }
+
 
     .item > a::before {
         display: none;
@@ -58,7 +60,11 @@
     }
 
     .texto_sobre {
-        max-width: 80vw;
+        max-width: 85vw;
+    }
+
+    .texto_sobre > p {
+        text-align: left;
     }
 
     .servicos_bg {
