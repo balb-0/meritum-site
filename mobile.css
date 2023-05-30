@@ -142,14 +142,6 @@
         background-position: center center;     
     }
 
-
-    @supports (backdrop-filter: blur()) {
-        .lista {
-            background-color: hsla(0, 0%, 15%, 0.294);
-            backdrop-filter: blur(0.8rem);
-            }
-        }
-
     .texto_footer {
         display: flex;
         justify-content: center;
@@ -161,7 +153,6 @@
     .texto-expanded {
         width: 80%;
         max-width: 80%;
-
     }
     
 }
