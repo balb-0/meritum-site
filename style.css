@@ -206,6 +206,11 @@ h1 {
     text-align: justify;
 }
 
+.black {
+    color: var(--cor6);
+    display: inline;
+}
+
 .phone-call {
     width: 50px;
     height: 50px;
@@ -372,7 +377,7 @@ h1 {
 
 .texto_contato > p {
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
 }
 
 .email-contato {

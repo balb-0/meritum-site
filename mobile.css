@@ -67,6 +67,15 @@
         text-align: left;
     }
 
+    .black {
+        display: none;
+    }
+
+    .show {
+        display: block;
+        color: var(--cor6);
+    }
+
     .servicos_bg {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -154,6 +163,11 @@
     .texto_contato {
         text-align: justify;
         max-width: 80vw;
+    }
+
+    .texto_contato > p {
+        text-align: left;
+
     }
 
     .email-contato {
