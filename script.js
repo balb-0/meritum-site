@@ -45,6 +45,8 @@ const toggle = window.document.querySelector(".toggle")
 const home = window.document.querySelector('.home_close')
 const sobre = window.document.querySelector('.sobre_close')
 const servicos = window.document.querySelector('.servicos_close')
+const contato = window.document.querySelector('.contato_close')
+
 
 
 
@@ -72,6 +74,11 @@ sobre.addEventListener('click', () => {
 })
 
 servicos.addEventListener('click', () => {
+    lista.setAttribute('data-visible', false)
+    toggle.setAttribute('aria-expanded', false)
+})
+
+contato.addEventListener('click', () => {
     lista.setAttribute('data-visible', false)
     toggle.setAttribute('aria-expanded', false)
 })

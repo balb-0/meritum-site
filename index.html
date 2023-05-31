@@ -21,6 +21,8 @@
                 <li class="item home_close" data-page="home" id="homebtn"><a href="#home">Home</a></li>
                 <li class="item sobre_close" id="sobrebtn"><a href="#sobre">Sobre</a></li>
                 <li class="item servicos_close" id="servicosbtn"><a href="#servicos">Serviços</a></li>
+                <li class="item contato_close" id="contatobtn"><a href="#contato">Contato</a></li>
+
             </ul>
             <section class="flex_icons">
                 <a href="https://www.instagram.com/meritum.mkt/" target="_blank">
@@ -83,6 +85,26 @@
                     <button class="servicos_btn saibamais-servicos saibamais-servicos-seo">SAIBA MAIS</button>
                 </section>
             </section>
+        </section>
+        <div class="separador">
+            <div class="linha"></div>
+        </div>
+        <section class="contato" id="contato">
+            <div class="contato_bg">
+                <div class="texto_contato">
+                    <p>Assim que recebemos sua mensagem, nossa prioridade é compreender sua demanda, bem como seus planos e objetivos. Com base nessa compreensão, faremos o possível para elaborar uma proposta que atenda às suas necessidades específicas. É importante ressaltar que nossa intenção é oferecer esse serviço de forma gratuita e sem qualquer obrigação da sua parte. Estamos aqui para ajudar e garantir que você obtenha a assistência necessária.</p>
+                </div>
+                <div>
+                    <form action="https://formspree.io/f/xpznvbay" class="email-contato" method="POST" id="formulario-contato">
+                        <h3 class="titulo-email-contato" class="item-email">Entre em Contato!</h3>
+                        <input type="text" name="text" id="text" placeholder="Nome" required class="item-email">
+                        <input type="email" name="email" id="email" placeholder="Email" required class="item-email">
+                        <input type="text" name="telefone" id="telefone" placeholder="Telefone" required class="item-email">
+                        <textarea id="mensagem-contato" name="mensagem-contato" rows="4" placeholder="Como podemos te ajudar?" class="item-email"></textarea>
+                        <button type="submit" class="item-email button-email">Enviar</button>
+                    </form>  
+                </div>
+            </div>
         </section>
 <!-- section abaixo é o botão do wpp -->
         <section class="wpp_btn">
@@ -167,5 +189,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

@@ -9,7 +9,6 @@
 *, *::after, *::before {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
     color: var(--cor4);
     text-decoration: none;
     box-sizing: border-box;
@@ -42,6 +41,7 @@ html.block-scroll {
     box-shadow: 0px 2px 6px 0px #00000066;
     position: sticky;
     top: 0px;
+    z-index: 2;
 }
 
 .navega {
@@ -299,6 +299,7 @@ h1 {
     gap: 10rem 10rem;
     padding: 2rem;
     max-width: 100vw;
+    min-height: 40vh;
 }
 
 .servicos_card {
@@ -332,6 +333,101 @@ h1 {
     cursor: pointer;
     background-color: #303f4e;
 }
+
+.separador {
+  width: 100vw;
+  height: 1px;
+  background-color: var(--cor3);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.linha {
+    width: 70vw;
+    max-width: 100%;
+    background-color: var(--cor4);
+    height: 1px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.contato {
+    background-color: var(--cor3);
+}
+
+.contato_bg {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 20%;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    color: var(--cor4);
+    text-align: center;
+}
+
+.texto_contato {
+    max-width: 40%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.texto_contato > p {
+    text-transform: uppercase;
+}
+
+.email-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor7);
+    padding: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+}
+
+.titulo-email-contato {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.item-email {
+    margin: .3rem;
+    min-height: 2rem;
+    width: 32rem;
+    max-width: 100%;
+    border-radius: .2rem;
+    border: none;
+    text-indent: 1rem;
+    text-transform: uppercase;
+}
+
+textarea {
+    padding-top: 1rem;
+}
+
+.button-email {
+    max-width: 8rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background-color: #495867;
+    color: var(--cor4);
+    transition: .2s;
+    box-shadow: 0px 2px 6px 0px #00000066;
+    text-shadow: 0px 2px 6px 0px #00000066;
+    text-align: center;
+    text-indent: 0;
+    margin-top: 1rem;
+}
+
+.button-email:hover {
+    cursor: pointer;
+    background-color: #303f4e;
+}
+
 
 
 /* footer */
