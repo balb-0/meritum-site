@@ -454,10 +454,11 @@ input, textarea {
 }
 
 .texto_footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 1.5rem;
-    text-align: center;
 }
 
 .infos_footer {
